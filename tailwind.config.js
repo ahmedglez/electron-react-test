@@ -1,7 +1,7 @@
 // Note: This file is used to configure tailwindcss
 
 module.exports = {
-  content: ["./src/**/*.{ts,tsx}"], // or 'media' or 'class'
+  content: ["./src/**/*.{ts,tsx}", "./node_modules/flowbite/**/*.js"], // or 'media' or 'class'
   theme: {   
     extend: {
       fontSize: {
@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('flowbite/plugin')
     // ...
   ],
 };
