@@ -1,4 +1,6 @@
 import React from "react";
+import { ChevronUp, QuestionMarkCircle } from "../icons";
+import { H1 } from "../typography/headers";
 
 interface CustomCardProps {
   children: React.ReactNode;
@@ -13,10 +15,10 @@ export const CustomCard: React.FC<CustomCardProps> = ({
     <div className="flex-col items-center justify-center bg-[#302F35] shadow-lg rounded-lg p-4">
       {/* This is the header of the card */}
       <div className="flex items-center justify-between w-full">
-        <h1 className="text-xl font-bold">{title}</h1>
-        <div className="flex items-center space-x-4">
-          <i className="fas fa-pencil-alt"></i>
-          <i className="fas fa-trash"></i>
+        <H1>{title}</H1>
+        <div className="flex items-center gap-1">
+          <QuestionMarkCircle color="#BEC2C4" size="small" />
+          <ChevronUp color="#BEC2C4" size="medium" />
         </div>
       </div>
       {/* This is the content of the card */}
