@@ -35,8 +35,11 @@ const HomePage = () => {
       style={{ fontFamily: "Open Sans" }}
       className="flex flex-col w-screen h-screen bg-black items-center justify-center p-12 text-white"
     >
-      <CustomCard>        
-        <div></div>
+      <CustomCard title="EXTRUSION">
+        <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4"></div>
+          <div className="flex flex-col space-y-4"></div>
+        </div>
       </CustomCard>
     </div>
   );
