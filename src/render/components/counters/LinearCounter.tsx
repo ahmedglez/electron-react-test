@@ -27,7 +27,7 @@ export const LinearCounter = () => {
   };
 
   return (
-    <div className="flex items-center justify-center space-x-3 ml-5">
+    <div className="flex items-center justify-start space-x-3 ml-10">
       <Checkbox
         checked={inputType === "Linear"}
         label="Linear :"
