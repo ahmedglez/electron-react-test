@@ -14,7 +14,7 @@ export const CustomCard: React.FC<CustomCardProps> = ({
   return (
     <div className="flex-col items-center justify-center bg-[#302F35] shadow-lg rounded-lg p-4">
       {/* This is the header of the card */}
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full  mb-5">
         <H1>{title}</H1>
         <div className="flex items-center gap-1">
           <QuestionMarkCircle color="#BEC2C4" size="small" />
