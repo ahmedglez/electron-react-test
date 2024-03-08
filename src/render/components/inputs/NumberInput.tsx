@@ -2,6 +2,7 @@ type NumberInputProps = {
   disabled?: boolean;
   label?: string;
   defaultValue?: number;
+  value?: number;
   handleNumberInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -19,6 +20,7 @@ export const NumberInput = (props: NumberInputProps) => {
       <input
         disabled={props.disabled}
         type="number"
+        value={props.value}
         id="number-input"
         aria-describedby="helper-text-explanation"
         defaultValue={props.defaultValue || 0}

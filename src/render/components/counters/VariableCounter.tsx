@@ -1,6 +1,6 @@
 import { setInputType } from "@/render/redux/reducers/inputType";
 import { useAppSelector, store } from "@redux/index";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Checkbox } from "../checkboxs";
 import { NumberInput } from "../inputs/NumberInput";
 
@@ -10,6 +10,16 @@ export const VariableCounter = () => {
   const [max, setMax] = useState(0);
 
   const { inputType } = state.example;
+
+  useEffect(() => {
+    if (min > max) {
+      setMin(max);
+    }
+
+    if (max < min) {
+      setMax(min);
+    }
+  }, [min, max]);
 
   const handleChangeMin = (e: React.ChangeEvent<HTMLInputElement>) => {
     setMin(parseInt(e.target.value));
@@ -37,11 +47,13 @@ export const VariableCounter = () => {
         handleCheckboxClick={handleCheckboxClick}
       />
       <NumberInput
+        value={min}
         label="Min :"
         disabled={inputType === "Linear"}
         handleNumberInputChange={handleChangeMin}
       />
       <NumberInput
+        value={max}
         label="Max :"
         disabled={inputType === "Linear"}
         handleNumberInputChange={handleChangeMax}
