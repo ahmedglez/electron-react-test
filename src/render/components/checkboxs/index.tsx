@@ -13,8 +13,11 @@ export const Checkbox = ({
     <div className="flex items-center justify-center space-x-2">
       {label && (
         <label
+          style={{
+            color: "rgba(255,255,255,0.50)",
+          }}
           htmlFor="default-checkbox"
-          className="ms-2 text-sm font-medium text-gray-100 dark:text-gray-300"
+          className="ms-2 text-sm font-medium"
         >
           {label}
         </label>

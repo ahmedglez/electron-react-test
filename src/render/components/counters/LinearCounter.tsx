@@ -8,9 +8,7 @@ import { NumberInput } from "../inputs/NumberInput";
 export const LinearCounter = () => {
   const state = useAppSelector((state) => state);
 
-  const { inputType } = state.example;
-
-  console.log("inputType", inputType);
+  const { inputType, counter } = state.example;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     store.dispatch(setCounter(parseInt(e.target.value)));
@@ -34,6 +32,7 @@ export const LinearCounter = () => {
         handleCheckboxClick={handleCheckboxClick}
       />
       <NumberInput
+        value={counter}
         disabled={inputType === "Variable"}
         handleNumberInputChange={handleChange}
       />
