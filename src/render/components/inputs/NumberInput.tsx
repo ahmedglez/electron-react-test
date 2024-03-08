@@ -12,7 +12,8 @@ export const NumberInput = (props: NumberInputProps) => {
       {props.label && (
         <label
           htmlFor="default-checkbox"
-          className="ms-2 text-sm font-medium text-gray-100 dark:text-gray-300"
+          style={{ color: "rgba(255,255,255,0.50)" }}
+          className="ms-2 text-sm font-medium"
         >
           {props.label}
         </label>
@@ -27,9 +28,10 @@ export const NumberInput = (props: NumberInputProps) => {
         style={{
           width: "80px",
           height: "30px",
-          backgroundColor: "#red",
+          backgroundColor: "#4E4E54",
+          opacity: props.disabled ? 0.2 : 1,
         }}
-        className="bg-gray-700 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 disabled:bg-gray-700 disabled:cursor-not-allowed disabled:opacity-60"
+        className=" text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         onChange={props.handleNumberInputChange}
       />
     </div>
