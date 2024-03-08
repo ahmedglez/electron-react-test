@@ -12,6 +12,7 @@ import {
 import countReducer from "./reducers/count";
 import inputTypeReducer from "./reducers/inputType";
 import charReducer from "./reducers/characters";
+import rangeReducer from "./reducers/range";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 // Persistance Config for redux-persist
@@ -40,6 +41,7 @@ const persistedReducer = persistReducer(
     counter: countReducer,
     inputType: inputTypeReducer,
     char: charReducer,
+    range: rangeReducer,
   })
 );
 
