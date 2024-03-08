@@ -10,6 +10,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import countReducer from "./reducers/count";
+import inputTypeReducer from "./reducers/inputType";
 import charReducer from "./reducers/characters";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
@@ -37,6 +38,7 @@ const persistedReducer = persistReducer(
   persistConfig,
   combineReducers({
     counter: countReducer,
+    inputType: inputTypeReducer,
     char: charReducer,
   })
 );
