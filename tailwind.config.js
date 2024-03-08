@@ -1,10 +1,19 @@
+// Note: This file is used to configure tailwindcss
+
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"], // or 'media' or 'class'
-  theme: {
-    extend: {},
+  theme: {   
+    extend: {
+      fontSize: {
+        'xl': '14px',
+      },     
+    }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    // ...
+  ],
 };
