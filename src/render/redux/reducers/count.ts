@@ -1,24 +1,11 @@
 import { createReducer, createAction } from "@reduxjs/toolkit";
 
-const initialState = 1;
+const initialState: number = 0;
 
-export const incrementCounter = createAction<number | undefined>(
-  "counter/increment"
-);
+export const setCounter = createAction<number>("counter/set");
 
-export const decrementCounter = createAction<number | undefined>(
-  "counter/decrement"
-);
-
-const reducer = createReducer(initialState, (builder) => {
-  builder.addCase(incrementCounter, (state, action) => {
-    const incrementBy = action.payload ?? 1;
-    return state + incrementBy;
-  });
-  builder.addCase(decrementCounter, (state, action) => {
-    const decrementBy = action.payload ?? 1;
-    return state - decrementBy;
-  });
+const counterReducer = createReducer(initialState, (builder) => {
+  builder.addCase(setCounter, (state, action) => action.payload);
 });
 
-export default reducer;
+export default counterReducer;
