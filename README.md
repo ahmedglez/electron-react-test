@@ -5,8 +5,17 @@
 > This project was bootstrapped from [electron-typescript-react-tailwind-redux](https://github.com/saucesteals/electron-typescript-react-tailwind-redux.git) template.
 
 ---
+### **Test File**
+[UITest.zip](https://github.com/ahmedglez/electron-react-test/files/14547369/UITest.zip)
+
 
 ### **Screenshots**
+
+
+https://github.com/ahmedglez/electron-react-test/assets/69789480/34996e17-7ee8-4d0e-9954-c2d0b0671c5c
+
+![msg6167667984-72984](https://github.com/ahmedglez/electron-react-test/assets/69789480/2bbce965-24d1-4ce3-b6f1-7150cd0bd1a0)
+
 
 ### **Installation**
 
