@@ -17,7 +17,7 @@ The content of the test file are only images and html files, the images are the 
 
 This is the design of the app:
 
-![msg6167667984-72984](https://github.com/ahmedglez/electron-react-test/assets/69789480/34996e17-7ee8-4d0e-9954-c2d0b0671c5c)
+https://github.com/ahmedglez/electron-react-test/assets/69789480/8ff4adf1-bf69-432e-b2f9-863b5db44fb2
 
 ### **Installation**
 
