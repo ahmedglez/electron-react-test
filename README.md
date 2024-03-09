@@ -6,16 +6,18 @@
 
 ---
 ### **Test File**
-[UITest.zip](https://github.com/ahmedglez/electron-react-test/files/14547369/UITest.zip)
 
+The test file can be downloaded from the link below:
+
+- [Test File](https://github.com/ahmedglez/electron-react-test/files/14547369/UITest.zip)
+
+The content of the test file are only images and html files, the images are the design of the app and the html files are the mockups of the app. So don't worry about getting viruses or anything like that.
 
 ### **Screenshots**
 
+This is the design of the app:
 
-https://github.com/ahmedglez/electron-react-test/assets/69789480/34996e17-7ee8-4d0e-9954-c2d0b0671c5c
-
-![msg6167667984-72984](https://github.com/ahmedglez/electron-react-test/assets/69789480/2bbce965-24d1-4ce3-b6f1-7150cd0bd1a0)
-
+![msg6167667984-72984](https://github.com/ahmedglez/electron-react-test/assets/69789480/34996e17-7ee8-4d0e-9954-c2d0b0671c5c)
 
 ### **Installation**
 
