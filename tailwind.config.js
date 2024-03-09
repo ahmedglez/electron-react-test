@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontSize: {
         'xl': '14px',
-      },     
+      },           
     }
   },
   variants: {
